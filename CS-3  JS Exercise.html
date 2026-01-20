@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+            alert("Welcome to my page!");
+        }
+
+        function yeFunction() {
+            document.getElementById("head").style.backgroundColor = "blue";
+            document.getElementById("par3").style.backgroundColor = "yellow";
+        }
+
+        function doubleClickAlert() {
+            alert("You double-clicked the 2nd paragraph");
+        }
+
+        function releaseMouseAlert() {
+            alert("DON'T LEAVE ME. I NEED YOUR ATTENTION.")
+        }
+    </script>
+</head>
+
+<body onload="myFunction()">
+
+    <p id="head" onmouseover="yeFunction()">Kent M. Tumol</p>
+
+    <p ondblclick="doubleClickAlert()">Kent M. Tumol</p>
+
+    <p id="par3">Kent M. Tumol</p>
+
+    <p id="par4" onmouseout="releaseMouseAlert()">Kent M. Tumol</p>
+
+</body>
+</html>
